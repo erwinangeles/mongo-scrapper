@@ -5,3 +5,12 @@ body {
 .waves-effect {
   margin-right: 5px;
 }
+
+#background-home{
+  background-image: url('./bg.jpg');
+ background-size: cover;
+}
+
+.header{
+  color: white;
+}
