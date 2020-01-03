@@ -1,0 +1,7 @@
+body {
+  background-image: url("./noisy_grid.png");
+  background-repeat: repeat;
+}
+.waves-effect {
+  margin-right: 5px;
+}
