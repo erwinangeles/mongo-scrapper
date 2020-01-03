@@ -28,6 +28,17 @@ $.getJSON("/articles", function(data) {
         window.location = "/"
     })
   });
+
+  $("#clear").on("click", function() {
+    $.ajax({
+        method: "GET",
+        url: "/clear",
+    }).done(function(data) {
+        console.log(data)
+        window.location = "/"
+    })
+  });
+  
   
   
   // Whenever someone clicks a comment

@@ -152,6 +152,20 @@ app.delete("/comment/delete/:comment_id/:article_id", function(req, res) {
   });
 });
 
+//delete all articles
+
+app.get("/clear", function(req, res){
+  console.log(req.body)
+  db.Article.deleteMany({}, function(err, result){
+    if (err) {
+      console.log(err)
+    } else {
+      console.log(result)
+      res.send(true)
+    }
+  })
+});
+
 // Start the server
 app.listen(process.env.PORT || 3000, function() {
   console.log("App running on port!");
